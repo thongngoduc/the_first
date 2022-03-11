@@ -1,5 +1,5 @@
 
-**1   Tổng quan**
+# Tổng quan
 
    **1.1  Tổng quan về công nghệ ảo hóa**
    
@@ -22,15 +22,19 @@ Hình 1.1.1 : Một server vật lý trong hệ thống ảo hóa
 **1.1.2.1 Tài nguyên vật lý (host machine / host hadware)**
 
 Các tài nguyên vật lý trong môi trường ảo hóa cung cấp tài nguyên mà các máy ảo sẻ sử dụng tới.một môi trường tài nguyên lớn có thể cung cấp được cho nhiều máy ảo chạy trên nó và hiệu quả làm việc của các máy ảo cao hơn. Các tài nguyên vật lý thông thường như là ổ đĩa cứng, Ram, card mạng, CPU,….
+
 **1.1.2.2 Các phần mềm ảo hóa (virtual software)**
 
 Lớp phần mềm ảo hóa này cung cấp sự truy cập cho mỗi máy ảo đến tài nguyên hệ thống. Nó cũng chịu trách nhiệm lập kế hoạch và phân chia tài nguyên vật lý cho các máy ảo. Phần mềm ảo hóa là nền tản của môi trường ảo hóa. Nó cho phép tạo ra các máy ảo cho người sử dụng, quản lý các tài nguyên và cung cấp các tài nguyên này đến các máy ảo. Kế hoạch quản lý sử dụng tài nguyên khi có sự tranh chấp một tài nguyên đặc biệt của các máy ảo, điều này dẫn tới sự hiệu quả làm việc của các máy ảo. Ngoài ra phần mềm ảo hóa còn cung cấp giao diện quản lý và cấu hình cho các máy ảo. 
+
 **1.1.2.3 Máy ảo (virtual machine)**
 
 Thuật ngữ máy ảo được dùng chung khi miêu tả cả máy ảo (lớp 3) và hệ điều hành ảo (lớp 4). Máy ảo thực chất là một phần cứng ảo trên một môi trường hay một phân vùng trên ổ đĩa. Trong môi trường này có đầy đũ thiết bị phần cứng như một máy thật . Đây là một kiểu phần  mềm ảo hóa dựa trên phần cứng vật lý. Các hệ điều hành khách mà chúng ta cài trên các máy ảo này không biết phần cứng mà nó nhìn thấy là phần cứng ảo. 
+
 **1.1.2.4 Hệ điều hành khách(Guest operating system)**
 
 Hệ điều hành khách được xem như một phần mềm (lớp 4) được cài đặt trên một máy ảo (lớp 3) giúp ta có thể sử dụng dễ dàng và xử lý các sự cố trong môi trường ảo hóa, Nó giúp người dùng có những thao tác giống như là đang thao tác trên một lớp phần cứng vật lý thực sự.
+
 **1.2.3 Ưu điểm của công nghệ ảo hóa**
 
 \-	Khai thác và quản lý triệt để các tài nguyên hiện hữu về cơ sở hạ tầng**,** giúp hệ thống hoạt động với sự linh hoạt cao, tận dụng khả năng phần cứng tối đa.
@@ -50,9 +54,11 @@ Hệ điều hành khách được xem như một phần mềm (lớp 4) đượ
 Vấn đề khó khăn của công nghệ này chính là về bảo mật. Bảo mật cho môi trường ảo hóa vẫn gặp nhiều khó khăn khi thiếu công cụ cần thiết vì môi trường ảo có những yêu cầu riêng, khác biệt so với môi trường thực tế.
 
 Vấn đề tương thích giữa hệ điều hành máy ảo với hệ điều hành máy chủ và hệ điều hành máy chủ với phần cứng.
+
 **1.2 Nội dung báo cáo**
 
 Nghiên cứu về công nghệ ảo hóa nói chung và công nghệ ảo hóa của VMWare nói riêng để hiểu và ứng dụng vào việc xây dựng mô hình ứng dụng ảo hóa trong thực tế cho doanh nghiệp.
+
 **1.3 Cấu trúc báo cáo**
 
 Chương 1: Tổng Quan.
@@ -73,7 +79,7 @@ Chương 4: Kết Luận
 
 Trình bày kết quả đạt được, những hạn chế và hướng phát triển của đề tài.
 
-# Nền tảng công nghệ ảo hóa** 
+# Nền tảng công nghệ ảo hóa
 
    **2.1 Các kiến trúc công nghệ ảo hóa**
    
@@ -141,7 +147,9 @@ Mục đích chính của việc ảo hóa máy chủ chính là tách rời m�
 Bao gồm việc ảo hóa các tính năng thông dụng trên máy chủ: Folder Redirect, Roaming User Profile, và Offline Files với đặc tính chung là sự tách rời phần dữ liệu và thông tin người dùng về hệ thống với máy trạm.
 
 User profiles, là một cấu trúc hệ thống file (thư mục và file) gồm có thông tin trạng thái cho mỗi người dùng trên một máy tính. Một số thư mục và file trong user profile thường bị ẩn để tránh cho người dùng nhầm lẫn với các nội dung của họ.
+
 **2.3 Cơ chế hoạt động của công nghệ ảo hóa**
+
 Ảo hóa được xây dựng dựa trên giải pháp chia một máy vật lý thành nhiều máy con. Giải pháp này được biết đến với cái tên là Virtual Machine Monitor (VMM) sau này gọi là Hypervisor. Hypervisor cho phép tạo tách rời các máy ảo và điều phối truy cập của các máy ảo này đến tài nguyên phần cứng.
 
 Hypervisor hoạt động như là một lớp phần mềm nằm ngay trên phần cứng hoặc bên dưới một hoặc nhiều hệ điều hành khách. Mục đích chính của nó là cung cấp các môi trường  làm việc cho các máy ảo. Cho phép các máy ảo hoạt động trên một phần của phần cứng được gọi là phân vùng (partition). Các hệ điều hành của máy ảo được cài đặt trên phân vùng này. Mỗi phân vùng sẽ được cung cấp tập hợp các tài nguyên phần cứng riêng của nó chẳng hạn như bộ nhớ, các chu kỳ CPU và thiết bị. Hypervisor có trách nhiệm điều khiển và phân phối các luồng truy cập đến các tài nguyên phần cứng
@@ -183,7 +191,9 @@ Hiện nay có 2 loại cân bằng tải được áp dụng:
 \-	Cân bằng tải sử dụng phần cứng: sử dụng các mođun cắm thêm trên các thiết bị chuyên dụng như Bộ định tuyến (Router) hay hay bộ chuyển mạch (Switch) để chia tải theo luồng, thường hoạt động từ layer 4 trở xuống. Vì sử dụng thiết bị chuyên dụng nên có hiệu năng cao, tính ổn định cao, khả năng mở rộng tốt hơn nhưng khó phát triển được tính năng bảo mật phức tạp. Thường sử dụng các thiết bị của Cisco, F5, Citrix,…
 
 \-	Cân bằng tải sử dụng phần mềm: Sử dụng phần mềm cài trên server để kết hợp nhiều server một cách chặt chẽ tạo thành một server ảo (virtual server). Cách này có ưu điểm là có thể chia sẻ được nhiều tài nguyên trong hệ thống, theo dõi được trạng thái của các máy chủ trong nhóm để chia tải hợp lý. Tuy nhiên, do sử dụng phần mềm trên server, tính phức tạp cao nên khả năng mở rộng của giải pháp này bị hạn chế, phức tạp khi triển khai cũng như khắc phục khi xảy ra sự cố, có rào cản về tính tương thích, khó có được những tính năng tăng tốc và bảo mật cho ứng dụng. Thường sử dụng các giải pháp Proxy, DNS load balancing, Round Robin NDS,…
+
 **2.4.2.1 Công nghệ cân bằng tải mạng (Network Load Balancing (NLB))**
+
 Load Balancing là một công nghệ có khả năng chia tải và nâng cao khả năng chịu lỗi của hệ thống. Được dùng cho các ứng dụng Stateless applications (các ứng dụng hoạt động mang tính nhất thời) như Web, File Tranfer Protocol (FTP), Virtual Private Network (VPN)… Trong hệ thống NLB sẽ bao gồm các cụm server được cấu hình tương tự nhau (có thể được đặt rải rác ở nhiều nơi) cùng hoạt động để phân phối khối lượng công việc giữa các máy chủ trong hệ thống, giúp hệ thống giảm bớt gánh nặng khi phân bố tải.
 
 Nhược  điểm của NLB là mỗi cụm server phải dùng riêng một nơi lưu trữ cục bộ (Local Storage) cho nên cần phải có quá trình đồng bộ hóa dữ liệu ở mỗi nơi lưu trữ, số lượng cụm server càng nhiều thì thời gian cho việc đồng bộ hóa càng lâu, chính vì điều này nên ta không nên triển khai các ứng dụng Stateful applications (các ứng dụng hoạt động thường xuyên trong thời gian dài) như các database server: Microsoft SQL Server, Microsoft Exchange Server, File and Print Server… trên kỹ thuật NLB này nhằm đảm bảo tính chính xác của dữ liệu.
@@ -215,7 +225,9 @@ Hệ thống bị động (gồm các nút không hoạt động) sẽ không tr
 \-   Nút không hoạt động bây giờ lại chuyển thành nút đang hoạt động, và ở chế độ sử dụng địa chỉ VIP.
 
 \-   Nếu nó vẫn đang hoạt động và đang duy trì kết nối mạng, nút trước kia là chủ động thì bây giờ trở thành nút bị động, bắt đầu giám sát các dịch vụ của nút chủ động.
+
 **2.4.3 Công nghệ lưu trữ SAN**
+
 SAN là một hệ thống mạng lưu trữ chuyên dụng kết nối nhiều Server và nhiều thiết bị lưu trữ, với mục  đích chính là truyền tải dữ liệu giữa hệ thống máy tính và phần tử lưu trữ và giữa các phần tử lưu trữ với nhau.
 
 ![image](https://user-images.githubusercontent.com/65167293/157791626-9a678764-b7f4-4e57-a8bd-c1ef16cba466.png)
@@ -275,11 +287,16 @@ Từ các chuẩn Raid trên cho ra đời các loại Raid như Raid 0, Raid 1,
 **2.5 Các tính năng của VMWare EXSi server**
 
    **2.5.1 Virtual Machine File System (VMFS)**
+   
 - VMFS của VMware chỉ được tạo dành cho ảo hóa VMware. Vì vậy nó là hệ thống file hiệu suất cao nhất có sẵn để sử dụng trong việc ảo hóa doanh nghiệp. Tuy được gộp vào phiên bản nào đó hoặc gói ESX Server hay VI bạn chọn nhưng VMFS vẫn được đưa ra như một sản phẩm riêng bởi Vmware. Điều này là vì nó cũng khá độc nhất.
-- Đây là một hệ thống file cluster hiệu suất cao cho phép nhiều hệ thống có thể truy cập vào hệ thống file tại cùng một thời điểm. VMFS là những gì mang đến cho bạn một nền tảng vững chắc để thực hiện VMotion và VMHA. Với nó bạn có thể tăng phân vùng một cách linh hoạt, hỗ trợ việc ghi nhật ký và bổ sung thêm đĩa ảo cho hệ thống. Thêm hoặc xóa một Server ESX từ một khối lượng VMware VMFS mà không phá vỡ khác ESX Server hosts. 
+- Đây là một hệ thống file cluster hiệu suất cao cho phép nhiều hệ thống có thể truy cập vào hệ thống file tại cùng một thời điểm. VMFS là những gì mang đến cho bạn một nền tảng vững chắc để thực hiện VMotion và VMHA. Với nó bạn có thể tăng phân vùng một cách linh hoạt, hỗ trợ việc ghi nhật ký và bổ sung thêm đĩa ảo cho hệ thống. Thêm hoặc xóa một Server ESX từ một khối lượng VMware VMFS mà không phá vỡ khác ESX Server hosts.
+  
   **2.5.2  Virtual symmetric multi-processing (Virtual SMP)**
+  
 - Virtual SMP của VMware (hay VSMP) là một tính năng cho phép VMware ESX Server có thể tận dụng đến 4 bộ vi xử lý vật lý trên hệ thống đồng thời. Thêm vào đó, với VSMP, việc xử lý các nhiệm vụ sẽ được cân bằng giữa các CPU. 
+
   **2.5.3Công nghệ độ sẵn sàng cao (High Availability)**
+  
 High Availability  được cung cấp bởi nhà sản suất VMware . Đây là một tiện ích hoàn hảo được thiết kế cho hệ thống máy chủ ESX  và VMware Infrastructure .Mục đích của công nghệ này là di chuyển các máy ảo từ máy chủ này sang một máy chủ khác khi sảy ra sự cố về hỏng hóc máy chủ vật lý hay mất kết nối mạng.Công nghệ này giúp các máy ảo ứng dụng có thể được phục hồi và hoạt động ngay khi chuyển sang máy chủ mới mà không có lo lằng gì về vấn đề tương thích với máy chủ vật lý.
 
 `	`Đây là một tính năng rất mạnh vì bất cứ hệ thống hoặc thiết bị phần cứng nào cũng đều có thể bị rủi ro và hư hỏng,và các vấn đề trục trặc này khó có thể đoán trước được .Vì vậy để đảm bảo an toàn dữ liệu và các máy chủ ứng dụng có thể hoạt động trực tuyến ngay lập tức khi bị sự cố thì giải pháp chính là  cấu hình cho hệ thống hoạt động tính năng High Availability.
@@ -307,36 +324,58 @@ Hạn chế:
 - Các CPU trên mỗi máy chủ phải tương thích với nhau.
 - Các máy ảo nằm trên hệ thống máy chủ gặp trục trặc cần phải khởi động lại.
 - Không đảm bảo an toàn cho các ứng dụng khi máy tự động khởi động lại sau khi chuyển qua máy chủ mới.
+
+
   **2.5.4 VMotion & Storage Vmotion**
+  
 ![image](https://user-images.githubusercontent.com/65167293/157791800-e31eb31b-90a2-4458-8b18-da06cad25038.png)
 
 - Với VMotion, khi ta thiết lập lưu trữ datacenter (không có thì không sử dụng được tính năng này), các máy khách ảo VM có thể được chuyển quyền điều khiển từ một máy esx server này sang một máy esx server khác mà không gây ra thời gian chết đối với người dùng
 - Storage VMotion (hay SVMotion) cũng tương tự như Vmotion trong vấn đề có liên quan tới VM, được chuyển và không có thời gian chết đối với máy khách VM và người dùng. Với SVMotion, các máy khách VM nằm trên máy chủ nó cư trú thì đĩa ảo cho VM chính là những gì chuyển đổi. Nó giúp bạn có thể chuyển đổi các đĩa ảo của máy khách VM từ một kho dữ liệu nội bộ trên máy chủ ESX này sang kho lưu trữ SAN (sang datacenter) chia mà không gây ra thời gian chết đối với người dùng
+
+
   **2.5.5 VMware Consolidated Backup (VCB)**
+  
 ![image](https://user-images.githubusercontent.com/65167293/157791834-ca5825a4-262b-4ceb-ab12-6a8fd03313d0.png)
 
 - VBC là một nhóm các tiện ích dòng lệnh của Windows, được cài đặt trên hệ thống Windows, có kết nối SAN đến hệ thống file ESX Server VMFS. Với VCB, bạn có thể thực hiện các backup mức file và mức image, khôi phục các máy khách VM, quay trở về máy chủ VCB. Nhiều hãng backup đã tích hợp VCB để có thể thực hiện dễ dàng hơn. 
 - Người ta thường sử dụng vSphere Data Recovery để thay thế vì nó có giao diện đồ họa dễ sử dụng.
+
+
   **2.5.6 Trung tâm quản lý nâng cấp (Vcenter update Manager)**
-- Quản lý nâng cấp (Update Manager) là một tính năng mới đi kèm với Virtual Center & ESX Server. Với Update Manager có thể thực hiện các nâng cấp ESX Server, các nâng cấp của hệ điều hành Windows và Linux đối với máy khách VM. Để thực hiện các nâng cấp ESX Server, có thể sử dụng Vmotion và nâng cấp ESX Server mà không hề gây ra thời gian chết đối với các máy khách VM đang chạy trên nó. Ngoài ra, Update Manager dùng để vá các hệ thống khách và chủ để ngăn chặn các lỗ hổng bảo mật đang bị khai thác. 
+  
+- Quản lý nâng cấp (Update Manager) là một tính năng mới đi kèm với Virtual Center & ESX Server. Với Update Manager có thể thực hiện các nâng cấp ESX Server, các nâng cấp của hệ điều hành Windows và Linux đối với máy khách VM. Để thực hiện các nâng cấp ESX Server, có thể sử dụng Vmotion và nâng cấp ESX Server mà không hề gây ra thời gian chết đối với các máy khách VM đang chạy trên nó. Ngoài ra, Update Manager dùng để vá các hệ thống khách và chủ để ngăn chặn các lỗ hổng bảo mật đang bị khai thác.
+
+
   **2.5.7 Phân phối tài nguyên theo lịch trình (Distributed resource scheduler( DRS))**
+  
 ![image](https://user-images.githubusercontent.com/65167293/157791864-5fa8bd21-7186-4c40-b285-7a0961ef1cbd.png)
 
-- Phân phối tài nguyên theo lịch trình là một trong những tính năng tiên tiến khác của ESX Server và VI Suite. DRS về cơ bản là một hệ thống lập lịch trình tài nguyên và cân bằng tải của các máy chủ ESX. Nếu được thiết lập hoàn toàn tự động thì DRS có thể nhận ra vị trí tài nguyên có lợi nhất trên tất cả các máy chủ ESX và chuyển linh hoạt các máy khách VM từ một máy chủ ESX này sang máy chủ khác bằng Vmotion, không mất thời gian chết của máy đối với người dùng. Nó có thể được sử dụng cho việc sắp đặt ban đầu của các máy khách VM và cho tối ưu liên tục (khi VMware gọi đến nó). Thêm vào đó, nó còn có thể được sử dụng cho việc duy trì máy chủ ESX. 
+- Phân phối tài nguyên theo lịch trình là một trong những tính năng tiên tiến khác của ESX Server và VI Suite. DRS về cơ bản là một hệ thống lập lịch trình tài nguyên và cân bằng tải của các máy chủ ESX. Nếu được thiết lập hoàn toàn tự động thì DRS có thể nhận ra vị trí tài nguyên có lợi nhất trên tất cả các máy chủ ESX và chuyển linh hoạt các máy khách VM từ một máy chủ ESX này sang máy chủ khác bằng Vmotion, không mất thời gian chết của máy đối với người dùng. Nó có thể được sử dụng cho việc sắp đặt ban đầu của các máy khách VM và cho tối ưu liên tục (khi VMware gọi đến nó). Thêm vào đó, nó còn có thể được sử dụng cho việc duy trì máy chủ ESX.
+
   **2.5.8 Quản lý phân phối điện năng (Distributed Power Manager (DPM))**
+  
 - DPM là một phần của Distributed Resource Scheduler (DRS) được tích hợp trong VMWare.
 - Cũng như chức năng tối ưu hóa quá trình tải tài nguyên qua nhiều máy chủ lưu trữ ESX của DRS, DPM cũng có thể góp phần thực hiện chức năng này bằng cách di chuyển các máy ảo khách khỏi những máy chủ không sử dụng và tắt những máy chủ này.
 - Trong VMWare, DPM được mô tả như sau: VMWare DRS tích hợp tính năng quản lý điện năng phân phối (DPM) thử nghiệm. Khi DPM được kích hoạt hệ thống sẽ đối chiếu công suất cấp độ máy chủ và cluster với yêu cấu của những máy ảo đang vận hành trong cluster đó. Dựa trên kết quả so sánh, DPM sẽ đề cuất (hay tự động triển khai) các biện pháp giúp giảm tiêu thụ điện năng của cluster.
+
+
   **2.5.9 Virtual Center (VC) & Infrastructure Client (VI Client)**
+  
 ![image](https://user-images.githubusercontent.com/65167293/157791918-c38a1ad4-9c9b-4b61-b4c3-97edde85b628.png)
 
 
 ` 	`VMware Infrastructure client và Virtual Center cũng là một tính năng tiên tiến của ESX Server & VI Suite. Virtual Center là một phần trong nhiều tính năng máy chủ ESX. Nó có nhiều tính năng tiên tiến bên trong. Khi đi kèm với VC, VI Client thực sự là một giao diện cho quản trị viên VMware sử dụng để cấu hình, tối ưu và quản trị tất cả các hệ thống máy chủ ESX.
 
 - Với VI Client, bạn có thể tăng được các vấn đề như hiệu suất, quản trị role, bảo mật, và các tính năng dựa trên mẫu của các máy khách VM mới cho toàn bộ cơ sở hạ tầng ảo hóa. Nếu có nhiều ESX Server, thì bạn cần phải có VMware Virtual Center.
+
+
   **2.5.10 Quản lý khôi phục site (Site Recovery Manager (SRM))**
+  
 ` 	`Quản lý khôi phục site là một tính năng khôi phục thảm họa tuyệt vời. Nếu bạn có hai trung tâm dữ liệu (một chính và được bảo vệ còn một phụ và được dùng để khôi phục - primary/protected - secondary/recovery), các máy chủ ESX của VMware và SRM được hỗ trợ SAN tại mỗi site thì bạn có thể sử dụng SRM để lập kế hoạch, kiểm tra và khôi phục toàn bộ cơ sở hạ tầng ảo hóa VMware của mình. 
+
 **2.5.11 Khôi phục dữ liệu (VMware vShere Data Recovery)**
+
 ![image](https://user-images.githubusercontent.com/65167293/157791964-fb5f7b9f-2ab2-4d4d-bd72-f58d3f085113.png)
 
 Một trong những tính năng mới trong vSphere là Data Recovery, trong cụm giải pháp “Essentials Plus” hoặc phiên bản vSphere Advanced. Tính năng mới này được cung cấp như một máy ảo bên trong môi trường vSphere và tích hợp với máy chủ vCenter nhằm cung cấp cách thức quản lý tập trung đối với các backup. vSphere Data Recovery sử dụng giao diện quản lý GUI khá hoàn chỉnh với một loạt các wizard hỗ trợ cài đặt và quản lý tất các công việc backup lẫn khôi phục.
@@ -413,14 +452,21 @@ Tìm hiểu được các công nghệ hỗ trợ cho công nghệ ảo hóa nh�
 Về thực nghiệm:
 
 Chưa triển khai được hệ thống mạng sử dụng công nghệ ảo hóa của VMWare và xây dựng được các server ứng dụng trên hệ thống ảo hóa này
+
 **Hạn chế**
+
 Do bị giới hạn về cơ sở vật chất nên chưa triển khai hết được các tính năng của VMWare (đòi hỏi về bản quyền, cấu hình máy chủ,…)
+
 **Hướng phát triển**
+
 Do bị hạn chế về vật chất, thời gian và khả năng của bản thân nên đề tài còn nhiều thiếu sót. Nếu có điều kiện, đề tài sẽ triển khai thêm các nội dung sau:
 
 - Triển khai đầy đủ các tính năng của ESX Server.
-- Triển khai mô hình doanh nghiệp đầy đủ và quy mô hơn.**	      
+- Triển khai mô hình doanh nghiệp đầy đủ và quy mô hơn.**	
+
+
 **Tài liệu tham khảo**
+
 [1] John Kelbley, Mike Sterling, Allen Stewart (2009) *Sybex - Windows Server 2008 Hyper-V*. Wiley Publishing, Inc
 
 [2] ScottLowe (2009 )*Mastering VMware vSphere 4*. Wiley Publishing
