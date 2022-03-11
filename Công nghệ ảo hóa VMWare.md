@@ -1,107 +1,3 @@
-﻿
-# **Mục lục**
-[CHƯƠNG 1:Tổng quan	4](#_Toc97746052)
-
-[1.1	Tổng quan về công nghệ ảo hóa	4](#_Toc97746053)
-
-[1.1.1	Khái niệm về công nghệ ảo hóa	4](#_Toc97746054)
-
-[1.1.2	Thành phần của một hệ thống ảo hóa	5](#_Toc97746055)
-
-[1.1.3	Ưu điểm của công nghệ ảo hóa	5](#_Toc97746056)
-
-[1.1.4	Nhược điểm	6](#_Toc97746057)
-
-[1.2	Nội dung báo cáo	6](#_Toc97746058)
-
-[1.3	Cấu trúc báo cáo	6](#_Toc97746059)
-
-[CHƯƠNG 2:Nền tảng công nghệ ảo hóa	8](#_Toc97746060)
-
-[2.1	Các kiến trúc công nghệ ảo hóa	8](#_Toc97746061)
-
-[2.1.1	Công nghệ ảo hóa VMWare	8](#_Toc97746062)
-
-[2.1.2	Công nghệ ảo hóa Hyper_V	8](#_Toc97746063)
-
-[2.1.3	Công nghệ ảo hóa OpenVZ	9](#_Toc97746064)
-
-[2.2	Phân loại ảo hóa	10](#_Toc97746065)
-
-[*2.2.1*	Ảo hóa máy chủ (Server virtualization)	10](#_Toc97746066)
-
-[2.2.2	Ảo hóa ứng dụng (Application virtualization)	11](#_Toc97746067)
-
-[*2.2.3*	Ảo hóa máy khách (Desktop Virtualization)	11](#_Toc97746068)
-
-[2.2.4	Ảo hóa trình diễn (Presentation virtualization)	12](#_Toc97746069)
-
-[2.2.5	Ảo hóa hồ sơ (Profile virtualization)	12](#_Toc97746070)
-
-[2.3	Cơ chế hoạt động của công nghệ ảo hóa	13](#_Toc97746071)
-
-[2.4	Các công nghệ hỗ trợ hệ thống ảo hóa	14](#_Toc97746072)
-
-[2.4.1	Công Nghệ Máy ảo (Virtual Machine)	14](#_Toc97746073)
-
-[2.4.2	Công nghệ cân bằng tải (Load Balancing)	15](#_Toc97746074)
-
-[2.4.3	Công nghệ lưu trữ SAN	17](#_Toc97746075)
-
-[2.4.4	Công nghệ Raid	19](#_Toc97746076)
-
-[2.5	Các tính năng của VMWare EXSi server	20](#_Toc97746077)
-
-[2.5.1	Virtual Machine File System (VMFS)	20](#_Toc97746078)
-
-[2.5.2	Virtual symmetric multi-processing (Virtual SMP)	21](#_Toc97746079)
-
-[2.5.3	Công nghệ độ sẵn sàng cao (High Availability)	21](#_Toc97746080)
-
-[2.5.4	VMotion & Storage Vmotion	22](#_Toc97746081)
-
-[2.5.5	VMware Consolidated Backup (VCB)	23](#_Toc97746082)
-
-[2.5.6	Trung tâm quản lý nâng cấp (Vcenter update Manager)	23](#_Toc97746083)
-
-[2.5.7	Phân phối tài nguyên theo lịch trình (Distributed resource scheduler( DRS))	24](#_Toc97746084)
-
-[2.5.8	Quản lý phân phối điện năng (Distributed Power Manager (DPM))	24](#_Toc97746085)
-
-[2.5.9	Virtual Center (VC) & Infrastructure Client (VI Client)	25](#_Toc97746086)
-
-[2.5.10	Quản lý khôi phục site (Site Recovery Manager (SRM))	25](#_Toc97746087)
-
-[2.5.11	Khôi phục dữ liệu (VMware vShere Data Recovery)	25](#_Toc97746088)
-
-[2.5.12* Chuyển đổi máy ảo (vCenter Convert)	26](#_Toc97746089)
-
-[CHƯƠNG 3:Triển khai và quản trị trên hệ thống VMWare	27](#_Toc97746090)
-
-[3.1	Mô hình ứng dụng	27](#_Toc97746091)
-
-[3.1.1	Mục tiêu triển khai hệ thống	27](#_Toc97746092)
-
-[3.1.2	Mô hình	27](#_Toc97746093)
-
-[3.1.3	Cài đặt VMWare EXS sever	28](#_Toc97746094)
-
-[CHƯƠNG 4:Kết luận	29](#_Toc97746095)
-
-[4.1	Kết quả đạt được	29](#_Toc97746096)
-
-[4.2	Hạn chế	29](#_Toc97746097)
-
-[4.3	Hướng phát triển	29](#_Toc97746098)
-
-[4.4	Tài liệu tham khảo	29](#_Toc97746099)
-
-
-
-
-
-
-
 
 1  # **Tổng quan**	
    1. ## **Tổng quan về công nghệ ảo hóa**
@@ -113,7 +9,7 @@ Sức mạnh của công nghệ ảo hóa là tận dụng hiệu suất làm vi
 1. ### **Khái niệm về công nghệ ảo hóa**
 Ảo hóa là một công nghệ phần mềm khai thác triệt để khả năng làm việc của các phần cứng trong một hệ thống máy chủ. Nó hoạt động như một tầng trung gian giữa hệ thống phần cứng máy tính và phần mềm chạy trên nó, nó thay đổi nhanh chóng toàn cảnh của lĩnh vực Công nghệ Thông tin (CNTT) và cách tính toán của con người. Máy chủ trong các hệ thống CNTT ngày nay thường được thiết kế để chạy một hệ điều hành và một ứng dụng. Điều này không khai thác triệt để hiệu năng của hầu hết các máy chủ rất lớn. Ảo hóa cho phép vận hành nhiều máy chủ ảo trên cùng một máy chủ vật lý, dùng chung các tài nguyên của một máy chủ vật lý qua nhiều môi trường khác nhau. Các máy chủ ảo khác nhau có thể vận hành nhiều hệ điều hành và ứng dụng khác nhau trên cùng một máy chủ vật lý.
 
-![anhso-033842\_what-is-virtualization](Aspose.Words.d2608c94-19ee-44a8-b161-c206359b6520.001.jpeg)
+![image](https://user-images.githubusercontent.com/65167293/157791176-24a7d227-9930-4def-8713-8f22a20c2894.png)
 
 Hình 1.1.1 : Một server vật lý trong hệ thống ảo hóa
 
@@ -167,42 +63,48 @@ Trình bày kết quả đạt được, những hạn chế và hướng phát 
       1. ### ` `**Công nghệ ảo hóa VMWare** 
 Đây là công nghệ ảo hóa cực kỳ mạnh mẽ của công ty VMware. Công nghệ ảo hóa của VMWare  cho phép doanh nghiệp và các nhà cung cấp dịch vụ biến trung tâm dữ liệu của họ thành những trung tâm dữ liệu được ảo hóa. Công nghệ ảo hóa này mang đến cho người sử dụng những nhu cầu thiết yếu là tính sẵn dùng, sự quản lý đồng bộ và khả năng bảo mật. Công nghệ ảo hóa của VMWare cho phép ảo hóa các hệ thống  máy chủ vật lý một cách mạnh mẽ và hiêu quả nhờ các tính năng cao cấp được hỗ trợ trong các phiên bản ESX server và trong phiên bản mới nhất VMWare vSphere Hypervisor. VMware cũng cung cấp đầy đủ các ứng dụng ảo hóa quan trọng cho doanh nghiệp, cụ thể là chức năng trình chịu lỗi, quản lý khả năng khôi phục dữ liệu, quản lý tài nguyên phần cứng được tập trung, …
 
-![bbv](Aspose.Words.d2608c94-19ee-44a8-b161-c206359b6520.002.jpeg)
+![image](https://user-images.githubusercontent.com/65167293/157791262-e347ec5a-41b2-4317-a0a3-fdf8587b252a.png)
 
 Hình 2.1.1: Mô hình ảo hóa VMWare
 1. ### **Công nghệ ảo hóa Hyper\_V** 
 Hyper-V chính là công nghệ ảo hóa thế hệ kế tiếp dựa trên hypervisor của Microsoft, hyper-v khai thác phần cứng server 64-bit thế hệ mới (Hyper-V chỉ chạy trên nền HĐH server 64-bit và CPU có hỗ trợ 64-bit có tính năng ảo hoá) và có nhiều cải tiến quan trọng, là thành phần quan trọng trong Windows Server 2008 x64 và tích hợp với các công cụ quản lý server quen thuộc trên Windows. 
 
-![7](Aspose.Words.d2608c94-19ee-44a8-b161-c206359b6520.003.png)
+![image](https://user-images.githubusercontent.com/65167293/157791300-b3abe81f-6fbe-4b5e-997e-ade97c8ab4af.png)
+
 Hình 2.1.2: Mô hình ảo hóa Hyper\_V
 
 Với Hyper-V, Microsoft cung cấp một nền tảng ảo hóa mạnh và linh hoạt, có thể đáp ứng nhu cầu ảo hóa mọi cấp độ cho môi trường doanh nghiệp. Với kiến trúc hoạt động mới của Hyper-V giúp xây dựng hệ thống Server bảo mật và khai thác tối ưu hiệu suất của Server trong hệ thống mạng. Trong cấu trúc của Hyper-V gồm 3 phần chính: phân vùng cha(parent) là phân vùng chứa hệ điều hành máy chủ vật lý, các phân vùng con(child) là phân vùng của các hệ điều hành máy ảo, cuối cùng là lớp hypervisor. Windows Hypervisor là một bộ giao tiếp bằng phần mềm, nó nằm giữa lớp phần cứng vật lý và một hay nhiều hệ điều hành. Hypervisor điều khiển việc truy cập đến phần nhân của phần cứng và định nghĩa ra các môi trường hoạt động độc lập tách rời gọi là partition. Nhiệm vụ chính của lớp Windows Hypervisor là đảm bảo sự tách rời giữa các phân vùng và giám sát việc sử dụng tài nguyên phần cứng giữa các phân vùng, bảo đảm cô lập để bảo mật giữa các phân vùng hệ điều hành máy ảo. Windows Hypervisor điều khiển phần cứng vật lý giống như advanced programmable interrupt controllers (APICs) trong việc ngắt quãng định tuyến, bộ xử lý vật lý để lên kế hoạch xử lý một cách logic việc truy cập của máy ảo, hàng chờ, không gian bộ nhớ vật lý để điều khiển các truy xuất đến Ram và bộ nhớ thiết bị và các phần cứng khác. Phân vùng cha quản lý việc phân phối Ram, bộ xử lý và quản lý nguồn, Pci bus, các thiết bi truy xuất thông qua các trình điều khiển thiết bị.
 1. ### **Công nghệ ảo hóa OpenVZ** 
 OpenVZ là một nhánh mã nguồn mở của Virtuozzo do SWsoft cung cấp. Đây là một giải pháp ảo hóa thương mại ở cấp độ hệ điều hành (OS-level virtuallization) dựa trên nhân Linux. OpenVZ cho phép một máy chủ vật lý có thể chạy nhiều hệ điều hành một cách độc lập và được coi như một máy chủ riêng ảo (VPSS) hoặc môi trường ảo (VES), đảm bảo các ứng dụng không bị xung đột. Lợi thế của OpenVZ là đạt được hiệu suất rất cao so với việc triển khai các máy chủ độc lập. Tuy nhiên OpenVZ có một hạn chế là đòi hỏi cả máy chủ và hệ điều hành khách đều phải sử dụng các hệ thống mã nguồn mở của Linux. OpenVZ được chia thành 2 cấp độ: mức tùy chỉnh nhân kernel và mức người sử dụng ở mức công cụ.
 
-![hghgh](Aspose.Words.d2608c94-19ee-44a8-b161-c206359b6520.004.jpeg)
+![image](https://user-images.githubusercontent.com/65167293/157791342-f2e24b3b-d2a6-4b7c-a269-7b8d56e92886.png)
 
 Hình 2.1.3: Mô hình ảo hóa OpenVZ
 1. ## **Phân loại ảo hóa**
    1. ### **Ảo hóa máy chủ (Server virtualization)**
-![1](Aspose.Words.d2608c94-19ee-44a8-b161-c206359b6520.005.jpeg)
+![image](https://user-images.githubusercontent.com/65167293/157791379-b92e8226-ad1d-443c-a527-047c53438384.png)
+
 
 Mục đích chính của việc ảo hóa máy chủ chính là tách rời mối liên hệ luồng công việc của máy chủ từ máy chủ vật lý để mà chúng ta có khả năng phân thành nhiều luồng công việc hơn đem đền sự hiệu quả đáng kể trong doanh nghiệp. Ví dụ trung bình với một máy vật lý dùng làm DHCP chỉ sử dung hết 3/10 khả năng của máy vật lý. Với ảo hóa máy chủ cho phép dùng hết 10/10 khả năng máy vật lý, lúc này máy vật lý sẽ kiêm nhiều nhiệm vụ hơn như DNS, FTP… tăng cao tính hiệu quả. Các công nghệ ảo hóa máy chủ hiện tại đang sử dụng công nghệ hypervisor giúp cho khả năng chạy nhiều hệ điều hành máy khách thường gọi là Partition (phân vùng) trên một máy chủ đơn lẻ. Khả năng phân luồng công việc máy chủ trở thành hiện thực. Bên cạnh đó công nghệ này cũng đem đến những cải thiện đáng kể cho máy chủ, nâng cao tính sẵn sàng cho hệ thống và khả năng mở rộng hạ tầng, đơn giản hóa việc sao lưu và phục hồi, và giảm chi phí điều hành.
 1. ### **Ảo hóa ứng dụng (Application virtualization)**
-![hgg](Aspose.Words.d2608c94-19ee-44a8-b161-c206359b6520.006.jpeg)
+![image](https://user-images.githubusercontent.com/65167293/157791412-18d3d833-1185-47fe-8efa-7167e66ec489.png)
+
 
 Ảo hóa ứng dụng là một dạng công nghệ ảo hóa khác cho phép chúng ta tách rời mối liên kết giữa ứng dụng và hệ điều hành và cho phép phân phối lại ứng dụng phù hợp với nhu cầu user. Bằng cách chạy các ứng dụng một cách tập trung thay vì cài đặt lên mỗi máy trạm, quản lý việc cập nhật phần mềm trở nên dễ dàng hơn, giải quyết vấn đề tương thích giữa các ứng dụng và việc thử nghiệm sự tương thích của chúng cũng trở nên dễ dàng hơn.
 1. ### **Ảo hóa máy khách (Desktop Virtualization)**
-![3](Aspose.Words.d2608c94-19ee-44a8-b161-c206359b6520.007.jpeg)
+![image](https://user-images.githubusercontent.com/65167293/157791437-34905c5d-7cc6-4e77-b030-e3796b1d4841.png)
+
 
 Đây là nhóm công nghệ mới mục tiêu chính là tạo nên một môi trường cô lập hoàn toàn trên máy tính. Việc triển khai công nghệ này có thể giúp chúng ta hỗ trợ các ứng dụng cũ chạy trên hệ điều hành hiện tại và giải quyết được vấn đề tương thích đang gây khó khăn khi muốn nâng cấp hệ thống, cho phép các doanh nghiệp tiếp cận các hệ điều hành mới nhất dễ dàng hơn và đạt đươc nhiều lợi ích hơn từ những tính năng mới.
 1. ### **Ảo hóa trình diễn (Presentation virtualization)**
-![4](Aspose.Words.d2608c94-19ee-44a8-b161-c206359b6520.008.jpeg)
+![image](https://user-images.githubusercontent.com/65167293/157791482-fb1d2cf1-d2c8-4eaf-8b02-c2f94c9f809a.png)
+
 
 Ảo hóa trình diễn đòi hỏi sự tách rời giữa việc xử lý và việc lưu trữ dữ liệu từ máy trạm. Khóa chính của giải pháp này chính là Terminal Services, là một trong những công nghệ ảo hóa sẵn sàng trên mọi phiên bản Windows Server 2008. Việc dùng Terminal Services đem đến cho chúng ta khả năng chạy một ứng dụng ở mọi nơi trong khi có thể dùng nó ở một nơi khác. Loại trừ đi được quá trình cài đặt các ứng dụng một cách cục bộ trên mỗi máy tính, từ giờ chúng ta có thể cài đặt và quản lý chúng một cách tập trung trong phòng quản lý hoặc data center. Terminal Services làm cho mỗi user cảm giác mình đang làm việc với các ứng dụng tại local với các thao tác được hiển thị trên màn hình, trong khi đó mọi thông tin thao tác thật sự đều gởi đến server xử lý.
 1. ### **Ảo hóa hồ sơ (Profile virtualization)**
 
-![C:\Documents and Settings\nguyen linh\My Documents\5.jpg](Aspose.Words.d2608c94-19ee-44a8-b161-c206359b6520.009.jpeg)
+![image](https://user-images.githubusercontent.com/65167293/157791499-3fc857cd-876b-4ed4-aed8-58cf4926d05b.png)
+
 
 Bao gồm việc ảo hóa các tính năng thông dụng trên máy chủ: Folder Redirect, Roaming User Profile, và Offline Files với đặc tính chung là sự tách rời phần dữ liệu và thông tin người dùng về hệ thống với máy trạm.
 
@@ -218,7 +120,7 @@ Khi một hệ điều hành thực hiện truy xuất hoặc tương tác tài 
 - Hypervisor liên lạc với các trình điều khiển thiết bị
 - Các trình điều khiển thiết bị phần cứng liên lạc trực tiếp đến phần cứng vật lý.
 
-![hv](Aspose.Words.d2608c94-19ee-44a8-b161-c206359b6520.010.jpeg)
+![image](https://user-images.githubusercontent.com/65167293/157791528-ee726c4e-4258-4514-b3f4-7639366021bf.png)
 
 Hình 2.3 : vị trí của lớp ảo hóa Hypervisor
 
@@ -227,7 +129,7 @@ Trong mô hình này trình điều khiển phần cứng liên lạc trực ti�
    1. ### **Công Nghệ Máy ảo (Virtual Machine)**
 Máy ảo là một máy tính được cài trên một hệ điều hành khác hay một máy tính khác. Một máy ảo cũng bao gồm phần cứng, các ứng dụng phần mềm và hệ điều hành. Điều khác biệt ở đây là lớp phần cứng của máy ảo không phải là các thiết bị thường mà chỉ là một môi trường hay phân vùng mà ở đó nó được cấp phát một số tài nguyên như là chu kì cpu, bộ nhớ, ỗ đĩa….Công nghệ máy ảo cho phép cài và chạy nhiều máy ảo trên một máy tính vật lý. Mỗi máy ảo có một hệ điều hành máy khách riêng lẻ và được phân bố tài nguyên, ổ cứng, card mạng và các tài nguyên phần cứng khác một cách hợp lý. Việc phân bố tài nguyên này phụ thuộc vào nhu cầu của từng máy ảo ứng dụng và cũng tùy thuộc vào phương pháp ảo hóa được dùng. Đặc biệt khi máy ảo cần truy  xuất tài nguyên phần cứng thì nó hoạt động giống như một máy thật hoàn chỉnh. Vì chỉ là một tập tin được phân vùng trên ổ đĩa nên việc di chuyển các máy ảo từ máy chủ này sang máy chủ khác là rất dễ dàng và không cần quan tâm đến vấn đề tương thích phần cứng hay ảnh hưởng tới máy chủ.
 
-. ![VMW1](Aspose.Words.d2608c94-19ee-44a8-b161-c206359b6520.011.jpeg)
+![image](https://user-images.githubusercontent.com/65167293/157791556-5a20532e-a22c-411b-967a-b96de19eea11.png)
 
 Hình 2.4.1 : Mô hình các lớp tương tác trong hệ thống
 
@@ -255,7 +157,7 @@ Nhược  điểm của NLB là mỗi cụm server phải dùng riêng một nơ
 \-   Nâng cao hiệu suất.
 \-   Tính sẵn sàng cao và khắc phục sự cố.
 
-![fgfgf.jpg](Aspose.Words.d2608c94-19ee-44a8-b161-c206359b6520.012.jpeg)
+![image](https://user-images.githubusercontent.com/65167293/157791599-bde1a326-476f-4161-adf2-274af1363d39.png)
 
 Hình 2.4.2.1: Mô hình cân bằng tải Clustering
 
@@ -277,7 +179,7 @@ Hệ thống bị động (gồm các nút không hoạt động) sẽ không tr
 1. ### **Công nghệ lưu trữ SAN**
 SAN là một hệ thống mạng lưu trữ chuyên dụng kết nối nhiều Server và nhiều thiết bị lưu trữ, với mục  đích chính là truyền tải dữ liệu giữa hệ thống máy tính và phần tử lưu trữ và giữa các phần tử lưu trữ với nhau.
 
-![12](Aspose.Words.d2608c94-19ee-44a8-b161-c206359b6520.013.jpeg)
+![image](https://user-images.githubusercontent.com/65167293/157791626-9a678764-b7f4-4e57-a8bd-c1ef16cba466.png)
 
 Trong ảo hóa công nghệ lưu trữ mạng được dùng làm trung tâm của dữ liệu và cũng có thể làm nơi chứa các máy ảo khi cần thiết. Nó hỗ trợ các máy chủ có thể lấy dữ liệu từ nó để khởi động.
 
@@ -309,11 +211,11 @@ Là một trong những chuẩn RAID có hiệu năng cao nhất , nó giúp ta 
 
 Ở cấp độ byte Striping chia ra thành từng gói nhỏ có kích thước một byte và bộ điều khiển sẽ ghi byte này lên ổ đĩa , trong cấp độ Block thì tập tin cũng bị chia nhỏ , lúc này chia nhỏ như thế nào thì tùy theo kích thước của Block nó như thế nào , tập tin sẽ được lưu và phân bổ trên các Block này.
 
-![Capture1](Aspose.Words.d2608c94-19ee-44a8-b161-c206359b6520.014.png)
+![image](https://user-images.githubusercontent.com/65167293/157791708-abaa64cd-0613-4ab3-a364-e40e85563214.png)
 1. #### **Duplexing (Ghép Đôi) :** 
 Đây là chuẩn mở rộng của Mirroring . Dữ liệu cũng được ghi trên hai ổ cứng nhưng phải có 2 bộ điều khiển RAID kết nối với 2 đĩa cứng . Từ đây ta đã thấy chuẩn này khá tốn kém . Nhưng có một đặc tính là Duplexing mang tính bảo mật cao hơn Mirroing vì ở đây nó dùng tới 2 card điêu khiển RAID
 
-![Capture2](Aspose.Words.d2608c94-19ee-44a8-b161-c206359b6520.015.png)
+![image](https://user-images.githubusercontent.com/65167293/157791733-81681f1f-1470-4d97-8636-d95f0c867cc9.png)
 1. #### ` `**Parity RAID:** 
 Đây là phương pháp bảo vệ an toàn cho dữ liệu , sử dụng các thông tin mang tính chẵn lẻ bằng cách lưu giữ một con số nhị phân 0 hoặc 1 cho biết tổng các bit trong gói tin là chẵn hay lẻ . Nếu dùng chuẩn này thì lợi ích lớn nhất của nó là không yêu cầu hệ thống RAID bớt đi một phần dung lượng để lưu trữ dữ liệu . Nhưng cũng có khuyết điểm của nó là phải yêu cầu hệt thống có một phần cứng thật mạnh .
 1. #### **JBOD:** 
@@ -331,7 +233,7 @@ High Availability  được cung cấp bởi nhà sản suất VMware . Đây l�
 
 `	`Đây là một tính năng rất mạnh vì bất cứ hệ thống hoặc thiết bị phần cứng nào cũng đều có thể bị rủi ro và hư hỏng,và các vấn đề trục trặc này khó có thể đoán trước được .Vì vậy để đảm bảo an toàn dữ liệu và các máy chủ ứng dụng có thể hoạt động trực tuyến ngay lập tức khi bị sự cố thì giải pháp chính là  cấu hình cho hệ thống hoạt động tính năng High Availability.
 
-![fgfgf](Aspose.Words.d2608c94-19ee-44a8-b161-c206359b6520.016.jpeg)
+![image](https://user-images.githubusercontent.com/65167293/157791776-5275b81e-129d-4ff7-8e19-79ee04fa21fb.png)
 
 Hình 2.5.3 : Sơ đồ hoạt động của VMware High Availability
 
@@ -355,19 +257,19 @@ Hạn chế:
 - Các máy ảo nằm trên hệ thống máy chủ gặp trục trặc cần phải khởi động lại.
 - Không đảm bảo an toàn cho các ứng dụng khi máy tự động khởi động lại sau khi chuyển qua máy chủ mới.
   1. ### **VMotion & Storage Vmotion**
-![](Aspose.Words.d2608c94-19ee-44a8-b161-c206359b6520.017.png)
+![image](https://user-images.githubusercontent.com/65167293/157791800-e31eb31b-90a2-4458-8b18-da06cad25038.png)
 
 - Với VMotion, khi ta thiết lập lưu trữ datacenter (không có thì không sử dụng được tính năng này), các máy khách ảo VM có thể được chuyển quyền điều khiển từ một máy esx server này sang một máy esx server khác mà không gây ra thời gian chết đối với người dùng
 - Storage VMotion (hay SVMotion) cũng tương tự như Vmotion trong vấn đề có liên quan tới VM, được chuyển và không có thời gian chết đối với máy khách VM và người dùng. Với SVMotion, các máy khách VM nằm trên máy chủ nó cư trú thì đĩa ảo cho VM chính là những gì chuyển đổi. Nó giúp bạn có thể chuyển đổi các đĩa ảo của máy khách VM từ một kho dữ liệu nội bộ trên máy chủ ESX này sang kho lưu trữ SAN (sang datacenter) chia mà không gây ra thời gian chết đối với người dùng
   1. ### **VMware Consolidated Backup (VCB)**
-![](Aspose.Words.d2608c94-19ee-44a8-b161-c206359b6520.018.png)
+![image](https://user-images.githubusercontent.com/65167293/157791834-ca5825a4-262b-4ceb-ab12-6a8fd03313d0.png)
 
 - VBC là một nhóm các tiện ích dòng lệnh của Windows, được cài đặt trên hệ thống Windows, có kết nối SAN đến hệ thống file ESX Server VMFS. Với VCB, bạn có thể thực hiện các backup mức file và mức image, khôi phục các máy khách VM, quay trở về máy chủ VCB. Nhiều hãng backup đã tích hợp VCB để có thể thực hiện dễ dàng hơn. 
 - Người ta thường sử dụng vSphere Data Recovery để thay thế vì nó có giao diện đồ họa dễ sử dụng.
   1. ### **Trung tâm quản lý nâng cấp (Vcenter update Manager)**
 - Quản lý nâng cấp (Update Manager) là một tính năng mới đi kèm với Virtual Center & ESX Server. Với Update Manager có thể thực hiện các nâng cấp ESX Server, các nâng cấp của hệ điều hành Windows và Linux đối với máy khách VM. Để thực hiện các nâng cấp ESX Server, có thể sử dụng Vmotion và nâng cấp ESX Server mà không hề gây ra thời gian chết đối với các máy khách VM đang chạy trên nó. Ngoài ra, Update Manager dùng để vá các hệ thống khách và chủ để ngăn chặn các lỗ hổng bảo mật đang bị khai thác. 
   1. ### **Phân phối tài nguyên theo lịch trình (Distributed resource scheduler( DRS))**
-![](Aspose.Words.d2608c94-19ee-44a8-b161-c206359b6520.019.png)
+![image](https://user-images.githubusercontent.com/65167293/157791864-5fa8bd21-7186-4c40-b285-7a0961ef1cbd.png)
 
 - Phân phối tài nguyên theo lịch trình là một trong những tính năng tiên tiến khác của ESX Server và VI Suite. DRS về cơ bản là một hệ thống lập lịch trình tài nguyên và cân bằng tải của các máy chủ ESX. Nếu được thiết lập hoàn toàn tự động thì DRS có thể nhận ra vị trí tài nguyên có lợi nhất trên tất cả các máy chủ ESX và chuyển linh hoạt các máy khách VM từ một máy chủ ESX này sang máy chủ khác bằng Vmotion, không mất thời gian chết của máy đối với người dùng. Nó có thể được sử dụng cho việc sắp đặt ban đầu của các máy khách VM và cho tối ưu liên tục (khi VMware gọi đến nó). Thêm vào đó, nó còn có thể được sử dụng cho việc duy trì máy chủ ESX. 
   1. ### **Quản lý phân phối điện năng (Distributed Power Manager (DPM))**
@@ -375,7 +277,8 @@ Hạn chế:
 - Cũng như chức năng tối ưu hóa quá trình tải tài nguyên qua nhiều máy chủ lưu trữ ESX của DRS, DPM cũng có thể góp phần thực hiện chức năng này bằng cách di chuyển các máy ảo khách khỏi những máy chủ không sử dụng và tắt những máy chủ này.
 - Trong VMWare, DPM được mô tả như sau: VMWare DRS tích hợp tính năng quản lý điện năng phân phối (DPM) thử nghiệm. Khi DPM được kích hoạt hệ thống sẽ đối chiếu công suất cấp độ máy chủ và cluster với yêu cấu của những máy ảo đang vận hành trong cluster đó. Dựa trên kết quả so sánh, DPM sẽ đề cuất (hay tự động triển khai) các biện pháp giúp giảm tiêu thụ điện năng của cluster.
   1. ### **Virtual Center (VC) & Infrastructure Client (VI Client)**
-![3](Aspose.Words.d2608c94-19ee-44a8-b161-c206359b6520.020.jpeg)
+![image](https://user-images.githubusercontent.com/65167293/157791918-c38a1ad4-9c9b-4b61-b4c3-97edde85b628.png)
+
 
 ` 	`VMware Infrastructure client và Virtual Center cũng là một tính năng tiên tiến của ESX Server & VI Suite. Virtual Center là một phần trong nhiều tính năng máy chủ ESX. Nó có nhiều tính năng tiên tiến bên trong. Khi đi kèm với VC, VI Client thực sự là một giao diện cho quản trị viên VMware sử dụng để cấu hình, tối ưu và quản trị tất cả các hệ thống máy chủ ESX.
 
@@ -383,7 +286,7 @@ Hạn chế:
   1. ### ` `**Quản lý khôi phục site (Site Recovery Manager (SRM))**
 ` 	`Quản lý khôi phục site là một tính năng khôi phục thảm họa tuyệt vời. Nếu bạn có hai trung tâm dữ liệu (một chính và được bảo vệ còn một phụ và được dùng để khôi phục - primary/protected - secondary/recovery), các máy chủ ESX của VMware và SRM được hỗ trợ SAN tại mỗi site thì bạn có thể sử dụng SRM để lập kế hoạch, kiểm tra và khôi phục toàn bộ cơ sở hạ tầng ảo hóa VMware của mình. 
 1. ### ` `**Khôi phục dữ liệu (VMware vShere Data Recovery)**
-![http://www.quantrimang.com.vn/photos/Image/012010/25/DataRecovery\_1.jpg](Aspose.Words.d2608c94-19ee-44a8-b161-c206359b6520.021.jpeg)
+![image](https://user-images.githubusercontent.com/65167293/157791964-fb5f7b9f-2ab2-4d4d-bd72-f58d3f085113.png)
 
 Một trong những tính năng mới trong vSphere là Data Recovery, trong cụm giải pháp “Essentials Plus” hoặc phiên bản vSphere Advanced. Tính năng mới này được cung cấp như một máy ảo bên trong môi trường vSphere và tích hợp với máy chủ vCenter nhằm cung cấp cách thức quản lý tập trung đối với các backup. vSphere Data Recovery sử dụng giao diện quản lý GUI khá hoàn chỉnh với một loạt các wizard hỗ trợ cài đặt và quản lý tất các công việc backup lẫn khôi phục.
 
@@ -396,7 +299,7 @@ Một trong những tính năng mới trong vSphere là Data Recovery, trong c�
 - Lưu trữ đĩa bằng cách sử dụng một loạt các giao thức kết nối chuẩn - iSCSI, FC, NAS hay lưu trữ nội bộ
 - vSphere được tích hợp đầy đủ và có nhiều cải tiến, tiếp tục backup các máy ảo khi chúng bị chuyển sang một host khác.
 ### **2.5.12*** **Chuyển đổi máy ảo (vCenter Convert)**
-![](Aspose.Words.d2608c94-19ee-44a8-b161-c206359b6520.022.png)
+![image](https://user-images.githubusercontent.com/65167293/157792000-a531d9a1-c206-49cd-b392-5ba7da442e61.png)
 
 Tính năng này cho phép convert máy vật lý đang chạy (bao gồm cả hệ điều hành và dữ liệu trên máy vật lý tùy bạn muốn) thành máy ảo chạy trong VMware ESX Server (cả windows và linux). Tính năng này miễn phí
 
@@ -411,7 +314,7 @@ Lưu ý rằng Virtual Center được yêu cầu cho một số tính năng ti�
 - Khai thác triệt để hiệu năng cũng như công năng của công nghệ và sức mạnh phần cứng máy chủ hiện nay.
 - Quản lý tập trung tại một điểm duy nhất và giảm thiểu các thao tác quản trị.
   1. ### **Mô hình** 
-![](Aspose.Words.d2608c94-19ee-44a8-b161-c206359b6520.023.png)
+![image](https://user-images.githubusercontent.com/65167293/157792033-e7e18ba0-3be9-41e4-bf90-46f91fdc8d27.png)
 
 
 
