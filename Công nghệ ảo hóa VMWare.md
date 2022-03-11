@@ -388,6 +388,8 @@ Yêu cầu hệ thống:
 |4|*RAID Controller*|Hỗ trợ chuẩn RAID-1 (Mirror)|
 |5|*Network Interface*|Gigabit Ethernet|
 |6|*Một số phần mềm hỗ trợ*|<p>- ESX server; VMWare vSphere client</p><p>- Window server 2003; win XP,</p><p>- Mail MDeamon server; các component để triển khai domain,web server,…</p>|
+
+
   **3.1.3 Cài đặt VMWare EXS sever**
 (Chưa làm được và sẽ bổ sung sau)
 
